@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated I'm Sorry Text</title>
+<style>
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    margin: 0;
+  }
+  .sorry-text {
+    font-size: 2em;
+    color: #FF6347;
+    font-weight: bold;
+    position: relative;
+    animation: wave 1.5s ease-in-out infinite;
+  }
+  
+  /* Define keyframes for the wave animation */
+  @keyframes wave {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(10px); }
+    50% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+  }
+</style>
+</head>
+<body>
+
+<div class="sorry-text">Ssry Paaps</div>
+
+</body>
+</html>
